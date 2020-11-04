@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using OSSC_Movil.Models;
+using OSSC_Movil.Views;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -15,28 +17,65 @@ namespace XFFurniture.ViewModels
         public MainPageViewModel(INavigation navigation)
         {
             Navigation = navigation;
-            SelectCategoryCommand = new Command<Category>((param) => ExecuteSelectCategoryCommand(param));
-            NavigateToDetailPageCommand = new Command<Product>(async (param) => await ExeccuteNavigateToDetailPageCommand(param));
+            SelectCategoryCommand = new Command<Modulo>((param) => ExecuteSelectCategoryCommand(param));
+            NavigateToDetailPageCommand = new Command<AccesoRapido>(async (param) => await ExeccuteNavigateToDetailPageCommand(param));
+
+            //NavigateToCategoryPageCommand = new Command(() =>  ExeccuteNavigateToCategoryPageCommand());
+
+
             GetCategories();
             GetProducts();
+            GetSlides();
+
+
+            MenuList = GetMenus();
+
+        }// MainPageViewModel
+
+
+        private ObservableCollection<Menu> menuList;
+        public ObservableCollection<Menu> MenuList
+        {
+            get { return menuList; }
+            set { menuList = value; }
         }
+
+        private ObservableCollection<Menu> GetMenus()
+        {
+            return new ObservableCollection<Menu>
+            {
+                new Menu { Icon = "config.png", Name = "Configuración"},
+                new Menu { Icon = "acercade.png", Name = "Acerca de"},
+                new Menu { Icon = "cerrarsesion.png", Name = "Cerrar sesión"},
+                new Menu { Icon = "salir.png", Name = "Salir"}
+            };
+        }
+
+        public Command NavigateToCategoryPageCommand { get; }
 
         public Command NavigateToDetailPageCommand { get; }
         public Command SelectCategoryCommand { get; }
-        public ObservableCollection<Category> Categories { get; set; }
-        public ObservableCollection<Product> Products { get; set; }
+        public ObservableCollection<Modulo> Categories { get; set; }
+        public ObservableCollection<AccesoRapido> Products { get; set; }
+
+        public ObservableCollection<CustomSlide> CustomSlides { get; set; }
 
         void GetCategories()
         {
-            Categories = new ObservableCollection<Category>(DataService.GetCategories());
+            Categories = new ObservableCollection<Modulo>(DataService.GetCategories());
+        }
+
+        void GetSlides()
+        {
+            CustomSlides = new ObservableCollection<CustomSlide>(DataService.GetSlides());
         }
 
         void GetProducts()
         {
-            Products = new ObservableCollection<Product>(DataService.GetProducts());
+            Products = new ObservableCollection<AccesoRapido>(DataService.GetProducts());
         }
 
-        private void ExecuteSelectCategoryCommand(Category model)
+        private void ExecuteSelectCategoryCommand(Modulo model)
         {
             var index = Categories
                .ToList()
@@ -48,8 +87,10 @@ namespace XFFurniture.ViewModels
 
                 Categories[index].selected = true;
                 Categories[index].textColor = "#FFFFFF";
-                Categories[index].backgroundColor = "#F4C03E";
+                Categories[index].backgroundColor = "#3E9CD9";
             }
+
+            Navigation.PushAsync(new Categoria());
         }
 
         void UnselectGroupItems()
@@ -62,9 +103,31 @@ namespace XFFurniture.ViewModels
             });
         }
 
-        private async Task ExeccuteNavigateToDetailPageCommand(Product param)
+        private async Task ExeccuteNavigateToDetailPageCommand(AccesoRapido param)
         {
-            await Navigation.PushAsync(new DetailPage(param));
+
+            //await Navigation.PushAsync(new DetailPage(param));
+            if (param.description.Equals(""))
+            {
+
+            }
+
         }
+
+
+        private async Task ExeccuteNavigateToCategoryPageCommand()
+        {
+
+            await Navigation.PushAsync(new Categoria());
+
+        }
+
+
+    }
+
+    public class Menu
+    {
+        public string Name { get; set; }
+        public string Icon { get; set; }
     }
 }

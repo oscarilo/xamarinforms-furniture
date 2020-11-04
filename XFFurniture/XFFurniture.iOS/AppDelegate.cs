@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using CarouselView.FormsPlugin.iOS;
+using Foundation;
 using UIKit;
 
 namespace XFFurniture.iOS
@@ -21,6 +22,8 @@ namespace XFFurniture.iOS
             global::Xamarin.Forms.Forms.Init();
 
             Sharpnado.Shades.iOS.iOSShadowsRenderer.Initialize();
+
+            CarouselViewRenderer.Init();
 
             LoadApplication(new App());
 

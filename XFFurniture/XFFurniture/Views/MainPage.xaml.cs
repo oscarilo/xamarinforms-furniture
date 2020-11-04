@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using Xamarin.Forms;
 using XFFurniture.Interfaces;
 using XFFurniture.ViewModels;
@@ -13,6 +14,7 @@ namespace XFFurniture
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             BindingContext = new MainPageViewModel(Navigation);
         }
 
@@ -20,5 +22,37 @@ namespace XFFurniture
         {
             DependencyService.Get<IStatusBarStyle>().ChangeTextColor();
         }
+
+
+
+        private void MenuTapped(object sender, EventArgs e)
+        {
+            OpenMenu();
+        }
+
+        private void OverlayTapped(object sender, EventArgs e)
+        {
+            CloseMenu();
+        }
+
+        private void CloseMenu()
+        {
+            Action<double> callback = input => MenuView.TranslationX = input;
+            MenuView.Animate("anim", callback, 0, -260, 16, 300, Easing.CubicInOut);
+
+            MenuGrid.IsVisible = false;
+        }
+
+
+
+        private void OpenMenu()
+        {
+            MenuGrid.IsVisible = true;
+
+            Action<double> callback = input => MenuView.TranslationX = input;
+            MenuView.Animate("anim", callback, -260, 0, 16, 300, Easing.CubicInOut);
+        }
+
+
     }
 }

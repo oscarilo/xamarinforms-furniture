@@ -1,6 +1,5 @@
-﻿using System;
+﻿using OSSC_Movil.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace XFFurniture
 {
@@ -12,7 +11,9 @@ namespace XFFurniture
 
             Device.SetFlags(new[] { "Shapes_Experimental" });
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new Login());
+
+
         }
 
         protected override void OnStart()

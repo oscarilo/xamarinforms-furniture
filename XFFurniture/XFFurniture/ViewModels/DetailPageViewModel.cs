@@ -8,7 +8,7 @@ namespace XFFurniture.ViewModels
 {
     public class DetailPageViewModel : BaseViewModel
     {
-        public DetailPageViewModel(INavigation navigation, Product product)
+        public DetailPageViewModel(INavigation navigation, AccesoRapido product)
         {
             Navigation = navigation;
             DependencyService.Get<IStatusBarStyle>().ChangeTextColor(true);
@@ -17,7 +17,7 @@ namespace XFFurniture.ViewModels
         }
 
         public Command PopDetailPageCommand { get; }
-        public Product Product { get; set; }
+        public AccesoRapido Product { get; set; }
 
         private async Task ExecutePopDetailPageCommand()
         {

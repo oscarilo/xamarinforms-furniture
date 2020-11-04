@@ -12,6 +12,7 @@
             <Setter Property="FontFamily" Value="FontMontserratRegular" />
             <Setter Property="TextColor" Value="#000000" />
         </Style>
+        
         <Color x:Key="colorBlack">#000000</Color>
         <Color x:Key="colorBlack27">#272829</Color>
         <Color x:Key="colorBlue232">#232A3A</Color>
@@ -24,5 +25,13 @@
         <Color x:Key="colorGrayEA">#EAEDF6</Color>
         <Color x:Key="colorRedFF">#FF4D4D</Color>
         <Color x:Key="colorRedD60">#FF4D60</Color>
+        <Color x:Key="colorBlue002">#00294F</Color>
+        <Color x:Key="colorGrayB3B">#B3B3B3</Color>
+        <Color x:Key="colorBlueOSSC">#3E9CD9</Color>
+        
+        
+        
+                
     </Application.Resources>
+    
 </Application>

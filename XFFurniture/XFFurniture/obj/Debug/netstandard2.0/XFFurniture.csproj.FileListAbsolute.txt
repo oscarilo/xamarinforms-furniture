@@ -1,0 +1,15 @@
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\XFFurniture.deps.json
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\XFFurniture.dll
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\ref\XFFurniture.dll
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\XFFurniture.pdb
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\XFFurniture.csprojAssemblyReference.cache
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\Views\DetailPage.xaml.g.cs
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\XFFurniture.AssemblyInfoInputs.cache
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\XFFurniture.AssemblyInfo.cs
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\XFFurniture.csproj.CoreCompileInputs.cache
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\XamlC.stamp
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\XFFurniture.dll
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\ref\XFFurniture.dll
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\XFFurniture.pdb
