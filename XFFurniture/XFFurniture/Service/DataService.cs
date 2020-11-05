@@ -7,7 +7,9 @@ namespace XFFurniture.Service
 {
     public class DataService
     {
-        public static ObservableCollection<Modulo> GetCategories()
+
+        // Creación de Modulos
+        public static ObservableCollection<Modulo> GetModulos()
         {
             return new ObservableCollection<Modulo>()
             {
@@ -27,40 +29,52 @@ namespace XFFurniture.Service
                     backgroundColor = "#EAEDF6",
                     textColor = "#000000"
                 },
-                new Modulo()
-                {
-                    description = "Nomina",
-                    //numberItems = 1815,
-                    image = "tvstand.png",
-                    backgroundColor = "#EAEDF6",
-                    textColor = "#000000"
-                },
+                //new Modulo()
+                //{
+                //    description = "Nomina",
+                //    //numberItems = 1815,
+                //    image = "tvstand.png",
+                //    backgroundColor = "#EAEDF6",
+                //    textColor = "#000000"
+                //},
 
-                new Modulo()
-                {
-                    description = "Reloj checador",
-                    //numberItems = 1815,
-                    image = "tvstand.png",
-                    backgroundColor = "#EAEDF6",
-                    textColor = "#000000"
-                },
+                //new Modulo()
+                //{
+                //    description = "Reloj checador",
+                //    //numberItems = 1815,
+                //    image = "tvstand.png",
+                //    backgroundColor = "#EAEDF6",
+                //    textColor = "#000000"
+                //},
 
-                new Modulo()
-                {
-                    description = "Timbrado",
-                    //numberItems = 1815,
-                    image = "tvstand.png",
-                    backgroundColor = "#EAEDF6",
-                    textColor = "#000000"
-                }
+                //new Modulo()
+                //{
+                //    description = "Timbrado",
+                //    //numberItems = 1815,
+                //    image = "tvstand.png",
+                //    backgroundColor = "#EAEDF6",
+                //    textColor = "#000000"
+                //}
             };
-        }
+        }// GetModulos
 
-
+        // Creación de carrusel
         public static ObservableCollection<CustomSlide> GetSlides()
         {
             return new ObservableCollection<CustomSlide>()
             {
+                new CustomSlide()
+                {
+                    Heading =" Digitalizador de documentos ",
+                    Caption = "Respaldo y fácil manejo de toda la documentación para los expedientes de tus trabajadores.",
+                    Image = "https://lirp-cdn.multiscreensite.com/50b520dc/dms3rep/multi/opt/iStock_81458689_MEDIUM-1920w.jpg"
+                },
+                new CustomSlide()
+                {
+                    Heading =" Nómina y Capital Humano",
+                    Caption = "Te damos la confianza y seguridad de un sistema de nómina y capital humano.",
+                    Image = "https://lirp-cdn.multiscreensite.com/50b520dc/dms3rep/multi/opt/o-MAN-ON-COMPUTER-facebook-1920w.jpg"
+                },
                 new CustomSlide()
                 {
                     Heading =" Kiosko de empleados ",
@@ -80,11 +94,43 @@ namespace XFFurniture.Service
                     Image = "https://lirp-cdn.multiscreensite.com/50b520dc/dms3rep/multi/opt/AdobeStock_111453587-1920w.jpeg"
                 }
             };
-        }
+        } // GetSlides
 
-        //Creación de accesos rápidos
+        public static ObservableCollection<ElementoMenu> GetMenus()
+        {
+            return new ObservableCollection<ElementoMenu>()
+            {
+                new ElementoMenu ()
+                {
+                    IDmenu = 1,
+                    Icon = "config.png",
+                    Name = "Configuración"
+                },
+                new ElementoMenu ()
+                {
+                    IDmenu = 2,
+                    Icon = "acercade.png",
+                    Name = "Acerca de"
+                },
+                new ElementoMenu ()
+                {
+                    IDmenu = 3,
+                    Icon = "cerrarsesion.png",
+                    Name = "Cerrar sesión"
+                },
+                new ElementoMenu ()
+                {
+                    IDmenu = 4,
+                    Icon = "salir.png",
+                    Name = "Salir"
+                }
+            };
+        }// GetMenus
 
-        public static ObservableCollection<AccesoRapido> GetProducts()
+
+        //Creación de MÓDULOS
+
+        public static ObservableCollection<AccesoRapido> GetAccesos()
         {
             return new ObservableCollection<AccesoRapido>()
             {
@@ -111,7 +157,7 @@ namespace XFFurniture.Service
                 new AccesoRapido()
                 {
                     ID = 2,
-                    description = "Timbrado",
+                    description = "Kiosko de empleados",
                     rating = 4.5,
                     review = 263,
 
@@ -146,44 +192,44 @@ namespace XFFurniture.Service
                     },
                     overview = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     createdBy = "Xamarin Forms"
-                //},
-                //new AccesoRapido()
-                //{
-                //    description = "Op 2",
-                //    rating = 4.8,
-                //    review = 525,
-                //    image = "digitalizador.png",
-                //    oldPrice = 0,
-                //    newPrice = 2199,
-                //    favorite = true,
-                //    discount = 0,
-                //    colors = new List<Color>()
-                //    {
-                //        new Color(){ color = "#9AADB0" },
-                //        new Color(){ color = "#54889A", selected = true },
-                //        new Color(){ color = "#3B3B3B" }
-                //    },
-                //    overview = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                //    createdBy = "Xamarin Forms"
-                //},
-                //new AccesoRapido()
-                //{
-                //    description = "Timbrado",
-                //    rating = 4,
-                //    review = 718,
-                //    oldPrice = 1589,
-                //    newPrice = 3650,
-                //    favorite = true,
-                //    discount = 15,
-                //    colors = new List<Color>()
-                //    {
-                //        new Color(){ color = "#9AADB0" },
-                //        new Color(){ color = "#54889A" },
-                //        new Color(){ color = "#3B3B3B", selected = true }
-                //    },
-                //    overview = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                //    createdBy = "Xamarin Forms"
-                //},
+                },
+                new AccesoRapido()
+                {
+                    description = "Reloj checador",
+                    rating = 4.8,
+                    review = 525,
+                    image = "https://lirp-cdn.multiscreensite.com/50b520dc/dms3rep/multi/opt/reloj+checador-db6b002d-1920w.jpg",
+                    oldPrice = 0,
+                    newPrice = 2199,
+                    favorite = true,
+                    discount = 0,
+                    colors = new List<Color>()
+                    {
+                        new Color(){ color = "#9AADB0" },
+                        new Color(){ color = "#54889A", selected = true },
+                        new Color(){ color = "#3B3B3B" }
+                    },
+                    overview = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    createdBy = "Xamarin Forms"
+                },
+                new AccesoRapido()
+                {
+                    description = "Timbrado",
+                    rating = 4,
+                    review = 718,
+                    oldPrice = 1589,
+                    newPrice = 3650,
+                    favorite = true,
+                    discount = 15,
+                    colors = new List<Color>()
+                    {
+                        new Color(){ color = "#9AADB0" },
+                        new Color(){ color = "#54889A" },
+                        new Color(){ color = "#3B3B3B", selected = true }
+                    },
+                    overview = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    createdBy = "Xamarin Forms"
+                },
                 //new AccesoRapido()
                 //{
                 //    description = "Timbrado",
@@ -203,7 +249,7 @@ namespace XFFurniture.Service
                 //    },
                 //    overview = "Homez offers Furniture at affordable prices with the best quality and durability with modern designs. Our aim is to meet the necessity of home decor and for the ones who are looking for premium and trending seating solutions.\n\nBucket Style Sofas have rounded or contoured back. The earliest bucket sofas had high sides and were named for their resemblance to buckets.\n\nFurniture bought on Homez.com is shipped for free. So go ahead and buy with confidence.",
                 //    createdBy = "Xamarin Forms"
-                },
+                //},
             };
         }
     }

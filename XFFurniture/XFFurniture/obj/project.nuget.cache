@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kazlh6AgaoTpZQ577b3Xjou3vAWgOvn0zEP8UwvmvBbhbP2ib+TNZSKTOZZuWAv5HME/cJFVOFvMRSGYvSVnRw==",
+  "dgSpecHash": "4Y6p9m1nKP8YUqjXGzczAf7hY+ovDOurbRDdIIUPLaJhmB8rRO26S02iFBUhNc/V9jqo7HPc977gDOZiCpuTUQ==",
   "success": true,
   "projectFilePath": "C:\\OSSC Project\\xamarinforms-furniture\\XFFurniture\\XFFurniture\\OSSC_Movil.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\oscar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\oscar\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\oscar\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\oscar\\.nuget\\packages\\rg.plugins.popup\\1.1.5.188\\rg.plugins.popup.1.1.5.188.nupkg.sha512",
     "C:\\Users\\oscar\\.nuget\\packages\\sharpnado.shadows\\1.0.2\\sharpnado.shadows.1.0.2.nupkg.sha512",
     "C:\\Users\\oscar\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\oscar\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

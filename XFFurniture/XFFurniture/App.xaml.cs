@@ -11,7 +11,7 @@ namespace XFFurniture
 
             Device.SetFlags(new[] { "Shapes_Experimental" });
 
-            MainPage = new NavigationPage(new Login());
+            MainPage = new NavigationPage(new CarouselViewAd());
 
 
         }

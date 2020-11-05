@@ -1,68 +1,59 @@
 ﻿using OSSC_Movil.Models;
 using OSSC_Movil.Views;
+using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
-using XFFurniture.Models;
 using XFFurniture.Service;
 using XFFurniture.ViewModel;
 using XFFurniture.Views;
+using XFFurniture.Models;
 
 namespace XFFurniture.ViewModels
 {
     public class MainPageViewModel : BaseViewModel
     {
+        // Colecciones
+        public ObservableCollection<Modulo> Modulo { get; set; }
+        public ObservableCollection<AccesoRapido> Acceso { get; set; }
+        public ObservableCollection<ElementoMenu> Menu { get; set; }
+        public ObservableCollection<CustomSlide> CustomSlides { get; set; }
+
+        //public ObservableCollection<CustomSlide> WalkthroughItems { get; }
+
+        // Commands
+        public Command NavigateToCategoryPageCommand { get; }
+        public Command NavigateToDetailPageCommand { get; }
+        public Command SelectCategoryCommand { get; }
+        public Command SelectItemMenu { get; }
+
         public MainPageViewModel(INavigation navigation)
         {
             Navigation = navigation;
             SelectCategoryCommand = new Command<Modulo>((param) => ExecuteSelectCategoryCommand(param));
             NavigateToDetailPageCommand = new Command<AccesoRapido>(async (param) => await ExeccuteNavigateToDetailPageCommand(param));
+            //SelectItemMenu = new Command<ElementoMenu>((param) => ExecuteSelectCategoryCommand(param));
 
             //NavigateToCategoryPageCommand = new Command(() =>  ExeccuteNavigateToCategoryPageCommand());
 
-
-            GetCategories();
-            GetProducts();
+            GetModulos();
+            GetAccesoRapido();
             GetSlides();
-
-
-            MenuList = GetMenus();
-
+            GetMenus();
         }// MainPageViewModel
 
 
-        private ObservableCollection<Menu> menuList;
-        public ObservableCollection<Menu> MenuList
+        // Methods
+        void GetModulos()
         {
-            get { return menuList; }
-            set { menuList = value; }
+            Modulo = new ObservableCollection<Modulo>(DataService.GetModulos());
         }
 
-        private ObservableCollection<Menu> GetMenus()
+        void GetMenus()
         {
-            return new ObservableCollection<Menu>
-            {
-                new Menu { Icon = "config.png", Name = "Configuración"},
-                new Menu { Icon = "acercade.png", Name = "Acerca de"},
-                new Menu { Icon = "cerrarsesion.png", Name = "Cerrar sesión"},
-                new Menu { Icon = "salir.png", Name = "Salir"}
-            };
-        }
-
-        public Command NavigateToCategoryPageCommand { get; }
-
-        public Command NavigateToDetailPageCommand { get; }
-        public Command SelectCategoryCommand { get; }
-        public ObservableCollection<Modulo> Categories { get; set; }
-        public ObservableCollection<AccesoRapido> Products { get; set; }
-
-        public ObservableCollection<CustomSlide> CustomSlides { get; set; }
-
-        void GetCategories()
-        {
-            Categories = new ObservableCollection<Modulo>(DataService.GetCategories());
+            Menu = new ObservableCollection<ElementoMenu>(DataService.GetMenus());
         }
 
         void GetSlides()
@@ -70,14 +61,15 @@ namespace XFFurniture.ViewModels
             CustomSlides = new ObservableCollection<CustomSlide>(DataService.GetSlides());
         }
 
-        void GetProducts()
+        void GetAccesoRapido()
         {
-            Products = new ObservableCollection<AccesoRapido>(DataService.GetProducts());
+            Acceso = new ObservableCollection<AccesoRapido>(DataService.GetAccesos());
         }
+
 
         private void ExecuteSelectCategoryCommand(Modulo model)
         {
-            var index = Categories
+            var index = Modulo
                .ToList()
                .FindIndex(p => p.description == model.description);
 
@@ -85,9 +77,9 @@ namespace XFFurniture.ViewModels
             {
                 UnselectGroupItems();
 
-                Categories[index].selected = true;
-                Categories[index].textColor = "#FFFFFF";
-                Categories[index].backgroundColor = "#3E9CD9";
+                Modulo[index].selected = true;
+                Modulo[index].textColor = "#FFFFFF";
+                Modulo[index].backgroundColor = "#3E9CD9";
             }
 
             Navigation.PushAsync(new Categoria());
@@ -95,7 +87,7 @@ namespace XFFurniture.ViewModels
 
         void UnselectGroupItems()
         {
-            Categories.ForEach((item) =>
+            Modulo.ForEach((item) =>
             {
                 item.selected = false;
                 item.textColor = "#000000";
@@ -106,14 +98,17 @@ namespace XFFurniture.ViewModels
         private async Task ExeccuteNavigateToDetailPageCommand(AccesoRapido param)
         {
 
-            //await Navigation.PushAsync(new DetailPage(param));
-            if (param.description.Equals(""))
+            await Navigation.PushAsync(new DetailPage(param));
+            if (param.ID == 1)
             {
-
+                Console.WriteLine("ENTRO 1");
+            }
+            else if (param.ID == 2)
+            {
+                Console.WriteLine("ENTRO 2");
             }
 
         }
-
 
         private async Task ExeccuteNavigateToCategoryPageCommand()
         {
@@ -123,11 +118,6 @@ namespace XFFurniture.ViewModels
         }
 
 
-    }
+    }// class
 
-    public class Menu
-    {
-        public string Name { get; set; }
-        public string Icon { get; set; }
-    }
-}
+}// namespace

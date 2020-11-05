@@ -3,30 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
              xmlns:local="clr-namespace:OSSC_Movil.Renders"
+             xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              x:Class="OSSC_Movil.Views.Login">
 
 
-    <StackLayout BackgroundColor="#e6e6e6">
+    <StackLayout BackgroundColor="White">
         <Grid>
-            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
-                <Frame HeightRequest="300" BackgroundColor="#3E9CD9" Padding="0" Margin="0">
-                    <Image Source="fondologin.jpg" Aspect="AspectFill" Margin="0"/>
+
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand" >
+                <Frame HeightRequest="200" BackgroundColor="#FFFFFF" Padding="0" Margin="0" VerticalOptions="Start">
+                    <Grid Margin="0,0">
+
+                        <Image Source="https://lirp-cdn.multiscreensite.com/50b520dc/dms3rep/multi/opt/Slide3-1920w.jpg" VerticalOptions="Start"/>
+                        <!--<cv:CarouselViewControl x:Name="cvWalkthrough" ShowIndicators="true" IndicatorsShape="Circle" IndicatorsTintColor="LightGray"
+                                CurrentPageIndicatorTintColor="#3E9CD9" Orientation="Horizontal" InterPageSpacing="0" HeightRequest="200"
+                                ItemsSource="{Binding CustomSlides}" 
+                                AnimateTransition="True">
+
+                            <cv:CarouselViewControl.ItemTemplate >
+                                <DataTemplate >
+                                    <Frame HasShadow="False" BackgroundColor="#00294F"  
+                                       Padding="0" HorizontalOptions="Center" VerticalOptions="Center"
+                                        HeightRequest="30" >
+                                        <Grid HorizontalOptions="FillAndExpand" >
+                                            <Image Source="{Binding Image}" Aspect="Fill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.5" />
+                                            <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="400" Margin="25,30">
+                                                <Frame HasShadow="False" BackgroundColor="#00294F" CornerRadius="30" 
+                                                        Padding="0" HorizontalOptions="Start" VerticalOptions="Start"
+                                                        HeightRequest="80">
+                                                    <Label Text="{Binding Heading}" FontSize="Medium" TextColor="White" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                                                </Frame>
+                                                <Label x:Name="CaptionTxt" Text="{Binding Caption}" FontSize="Small" FontFamily="Montserrat-SemiBold" TextColor="White" Margin="0,0,0,0"/>
+                                                <Image  HeightRequest="50" WidthRequest="50" Aspect="Fill" HorizontalOptions="End" VerticalOptions="Start"/>
+                                            </StackLayout>
+                                        </Grid>
+                                    </Frame>
+                                </DataTemplate>
+                            </cv:CarouselViewControl.ItemTemplate>
+
+                        </cv:CarouselViewControl>-->
+                    </Grid>
                 </Frame>
             </StackLayout>
-            <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
-                <Frame  BackgroundColor="White" HeightRequest="650" HasShadow="True" Padding="0" Margin="0" CornerRadius="20">
+            <StackLayout Padding="0" Margin="0,150,0,0" HorizontalOptions="FillAndExpand">
+                <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True"  Margin="15,0,15,0"  CornerRadius="20">
 
                     <StackLayout>
 
 
                         <StackLayout Margin="10">
 
-                            <Image Source="logotop.png" HeightRequest="80" Margin="0,30"/>
+                            <Image Source="logotop.png" HeightRequest="80" Margin="0,20"/>
                             <Label Text="Iniciar Sesión" TextColor="Black" HorizontalOptions="CenterAndExpand" FontFamily="Montserrat-SemiBold"  FontSize="Medium" />
 
                         </StackLayout>
 
-                        <StackLayout Padding="0" Margin="15,10">
+                        <StackLayout Padding="0" Margin="20,0" >
 
                             <!--<Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                                 <StackLayout Orientation="Horizontal">
@@ -37,10 +69,10 @@
 
                                 </StackLayout>
                             </Frame>-->
-                            <xfx:XfxEntry Placeholder="Usuario" FontFamily="FontMontserratMedium" PlaceholderColor="LightGray" 
-                                           TextColor="#00294F" FontAttributes="None" VerticalOptions="CenterAndExpand"/>
+                            <xfx:XfxEntry Placeholder="Usuario:" FontFamily="FontMontserratMedium" PlaceholderColor="LightGray" 
+                                           TextColor="#00294F" FontAttributes="None" VerticalOptions="CenterAndExpand" ClearButtonVisibility="WhileEditing"/>
 
-                            <xfx:XfxEntry Placeholder="Contraseña" FontFamily="FontMontserratMedium" PlaceholderColor="LightGray" 
+                            <xfx:XfxEntry Placeholder="Contraseña:" FontFamily="FontMontserratMedium" PlaceholderColor="LightGray" 
                                           IsPassword="True" TextColor="#00294F" FontAttributes="None" VerticalOptions="CenterAndExpand"/>
 
                             <!--<Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
@@ -57,7 +89,7 @@
                             <StackLayout  Orientation="Horizontal">
 
                                 <Image Source="finger.png" HeightRequest="30"/>
-                                <Label Text="Asociar huella" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" Padding="0,20,0,20"/>
+                                <Label Text="Asociar huella" TextColor="DarkGray" FontFamily="FontMontserratMedium" FontSize="Small" VerticalTextAlignment="Center" Padding="0,10,0,20"/>
                                 <Switch HorizontalOptions="EndAndExpand"/>
                                 <!--<Label Text="Forgot Password" TextColor="#3E9CD9" FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />-->
 
@@ -65,8 +97,7 @@
                             </StackLayout>
 
                             <Button Text="Ingresar" BackgroundColor="#3E9CD9" TextColor="White" CornerRadius="30" Clicked="LoginClick" FontFamily="FontMontserratMedium"/>
-                            <Button Text="Salir" BackgroundColor="#3E9CD9" TextColor="White" CornerRadius="30" Margin="0,20" Clicked="SalirClick" FontFamily="FontMontserratMedium"/>
-                            <Label Text="v0.1 - Test" TextColor="LightGray" HorizontalOptions="EndAndExpand" FontFamily="Montserrat-SemiBold"/>
+                            
                             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                                 <!--<Label Text="Still Not Connected ?" TextColor="DarkGray" FontSize="Small"/>
                                 <Label Text="Sign Up" TextColor="#3E9CD9" FontAttributes="Bold" FontSize="Small"/>-->
@@ -99,6 +130,33 @@
                 </Frame>
             </StackLayout>
         </Grid>
+
+        <StackLayout Margin="0,25,0,0" Padding="0">
+            <Grid>
+                <!--<BoxView BackgroundColor="DarkGray" HeightRequest="1" WidthRequest="150"  HorizontalOptions="Center" VerticalOptions="Center"/>-->
+                                    <!--<Frame BackgroundColor="White" HeightRequest="45" WidthRequest="100"  HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">-->
+                                        <Label Text="Visita:" TextColor="DarkGray" FontSize="Micro" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                    <!--</Frame>-->
+            </Grid>
+
+        </StackLayout>
+
+
+
+        <ImageButton Source="emblema.png"
+                     WidthRequest="60"
+                     HeightRequest="60"
+                     HorizontalOptions="Center" 
+                     Clicked="ClickWebSite" 
+                     BackgroundColor="Transparent"
+                     />
+
+
+        <Label Text="v0.1 - Beta"
+               TextColor="LightGray"
+               FontSize="Micro" 
+               HorizontalOptions="EndAndExpand" 
+               />
     </StackLayout>
     
     

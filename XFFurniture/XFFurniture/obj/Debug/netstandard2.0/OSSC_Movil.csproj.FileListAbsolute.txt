@@ -1,7 +1,3 @@
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\OSSC_Movil.deps.json
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\OSSC_Movil.dll
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\ref\OSSC_Movil.dll
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\OSSC_Movil.pdb
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\Views\Categoria.xaml.g.cs
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\Views\DetailPage.xaml.g.cs
@@ -10,9 +6,12 @@ C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstan
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\Views\MainPage2.xaml.g.cs
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\OSSC_Movil.AssemblyInfoInputs.cache
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\OSSC_Movil.AssemblyInfo.cs
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\OSSC_Movil.csproj.CoreCompileInputs.cache
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\XamlC.stamp
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\OSSC_Movil.deps.json
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\OSSC_Movil.dll
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\ref\OSSC_Movil.dll
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\bin\Debug\netstandard2.0\OSSC_Movil.pdb
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\OSSC_Movil.dll
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\ref\OSSC_Movil.dll
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\OSSC_Movil.pdb
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\OSSC_Movil.csprojAssemblyReference.cache
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture\obj\Debug\netstandard2.0\Views\CarouselViewAd.xaml.g.cs

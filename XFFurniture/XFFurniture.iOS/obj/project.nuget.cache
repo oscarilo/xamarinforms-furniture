@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "e7inxR9IZUtyAKecxXgRmcT96ZhCYO6rSxtCsSumCSZ0gVeVyzw5Z9ZRA5CmOpU5DheApJ6HTHusUq07V/EDjw==",
+  "dgSpecHash": "npRrVhcIjQc3PzxOLSR5BT3Tc4hXTRG7GxEyVYtlKp4u8Hp2ufuCjPTkOp0btvW6mZHL1H5hyM83AXKhNo7mDg==",
   "success": true,
   "projectFilePath": "C:\\OSSC Project\\xamarinforms-furniture\\XFFurniture\\XFFurniture.iOS\\OSSC_Movil.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oscar\\.nuget\\packages\\carouselview.formsplugin\\5.2.0\\carouselview.formsplugin.5.2.0.nupkg.sha512",
     "C:\\Users\\oscar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\oscar\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\oscar\\.nuget\\packages\\rg.plugins.popup\\1.1.5.188\\rg.plugins.popup.1.1.5.188.nupkg.sha512",
     "C:\\Users\\oscar\\.nuget\\packages\\sharpnado.shadows\\1.0.2\\sharpnado.shadows.1.0.2.nupkg.sha512",
     "C:\\Users\\oscar\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\oscar\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

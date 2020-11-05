@@ -1,3 +1,11 @@
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\optimized\
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\OSSC_Movil.iOS.csprojAssemblyReference.cache
+C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\OSSC_Movil.iOS.csproj.CoreCompileInputs.cache
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\bin\iPhone\Debug\XFFurniture.iOS.exe
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\bin\iPhone\Debug\XFFurniture.iOS.pdb
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\bin\iPhone\Debug\CarouselView.FormsPlugin.Abstractions.dll
@@ -55,14 +63,6 @@ C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\bin\iPhone\De
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\bin\iPhone\Debug\OSSC_Movil.pdb
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\optimized\
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\OSSC_Movil.iOS.csprojAssemblyReference.cache
-C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\OSSC_Movil.iOS.csproj.CoreCompileInputs.cache
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\XamlC.stamp
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\OSSC_Movil.iOS.csproj.CopyComplete
 C:\OSSC Project\xamarinforms-furniture\XFFurniture\XFFurniture.iOS\obj\iPhone\Debug\XFFurniture.iOS.exe

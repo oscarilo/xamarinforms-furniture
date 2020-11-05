@@ -7,6 +7,7 @@
              xmlns:shadows="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows" xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              NavigationPage.HasNavigationBar="False"
              mc:Ignorable="d"
+             
              x:Class="OSSC_Movil.Views.MainPage2"          
              >
 
@@ -56,42 +57,14 @@
             </Grid>
                 <StackLayout
                     Grid.Row="1"
-                    Margin="0,30,20,0"
-                    Spacing="0" Orientation="Vertical">
-                    <StackLayout Orientation="Vertical" HorizontalOptions="Start">
+                    Margin="0,0,10,0"
+                    Spacing="0" Orientation="Vertical" >
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" >
 
                     
-                    <Image Source="logotop.png" WidthRequest="200" VerticalOptions="Center"/>
+                    <Image Source="logotop.png" WidthRequest="200" VerticalOptions="Center" HorizontalOptions="Center"/>
 
-                    <Grid Margin="0,20"> 
-                        <cv:CarouselViewControl x:Name="cvWalkthrough" ShowIndicators="true" IndicatorsShape="Circle" IndicatorsTintColor="LightGray"
-                                CurrentPageIndicatorTintColor="#00294F" Orientation="Horizontal" InterPageSpacing="0" HeightRequest="180" WidthRequest="200"
-                                ItemsSource="{Binding CustomSlides}" 
-                                AnimateTransition="True">
-                            
-                            <cv:CarouselViewControl.ItemTemplate >
-                                <DataTemplate >
-                                    <Frame HasShadow="False" BackgroundColor="#3E9CD9" CornerRadius="12" 
-                                       Padding="0" HorizontalOptions="Start" VerticalOptions="Start"
-                                        HeightRequest="30" >
-                                    <Grid HorizontalOptions="FillAndExpand" >
-                                        <Image Source="{Binding Image}" Aspect="Fill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.5" />
-                                        <StackLayout Orientation="Vertical" Spacing="20" HorizontalOptions="Start" VerticalOptions="End" WidthRequest="300" Margin="20,0">
-                                            <Frame HasShadow="False" BackgroundColor="#00294F" CornerRadius="15" 
-                                   Padding="0" HorizontalOptions="Start" VerticalOptions="Start"
-                                    HeightRequest="30">
-                                                <Label Text="{Binding Heading}" FontSize="Medium" TextColor="White" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-                                            </Frame>
-                                            <Label x:Name="CaptionTxt" Text="{Binding Caption}" FontSize="Small" TextColor="White" Margin="0,0,0,0"/>
-                                            <Image  HeightRequest="30" WidthRequest="30" Aspect="Fill" HorizontalOptions="End" VerticalOptions="End"/>
-                                        </StackLayout>
-                                    </Grid>
-                                    </Frame>
-                                </DataTemplate>
-                            </cv:CarouselViewControl.ItemTemplate>
-                            
-                        </cv:CarouselViewControl>
-                    </Grid>
+                    
 
 
                     <!--<Label
@@ -101,7 +74,7 @@
 
                     </StackLayout>
 
-                    <Label FontSize="15" Text="Módulos disponibles:" Margin="0,20,10,0"/>
+                    <Label FontSize="15" Text="Acceso rápido:" Margin="0,10,10,0"/>
 
                 </StackLayout>
 
@@ -110,14 +83,14 @@
                     x:Name="listCategories"
                     Grid.Row="2" 
                     HorizontalScrollBarVisibility="Always" 
-                    ItemsSource="{Binding Categories}"
+                    ItemsSource="{Binding Modulo}"
                     SelectionMode="None">
                     <CollectionView.ItemsLayout>
-                        <LinearItemsLayout ItemSpacing="5" Orientation="Horizontal" />
+                        <LinearItemsLayout ItemSpacing="2" Orientation="Horizontal" />
                     </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Grid>
+                            <Grid >
                                 <shadows:Shadows CornerRadius="50" Shades="{shadows:SingleShade BlurRadius=8, Offset='0,8', Opacity=0.5, Color={StaticResource colorBlue002}}" VerticalOptions="Center">
                                     <pancake:PancakeView
                                         Margin="5,5,5,5"
@@ -186,7 +159,7 @@
                     FontFamily="FontMontserratBold"
                     FontSize="{OnPlatform Android='18',
                                           iOS='24'}"
-                    Text="Acceso rápido:" />
+                    Text="Módulos:" />
 
 
                 <!--<Label
@@ -211,7 +184,7 @@
                     x:Name="listProducts"
                     Grid.Row="5"
                     Margin="0,15,20,0"
-                    ItemsSource="{Binding Products}"
+                    ItemsSource="{Binding Acceso}"
                     VerticalScrollBarVisibility="Never">
                     <CollectionView.ItemsLayout>
                         <GridItemsLayout
@@ -404,10 +377,10 @@
                 <Grid.Clip>
                     <PathGeometry Figures="M0,0V511.043H140.714l86.992-116.012V0Z"/>
                 </Grid.Clip>
-                <StackLayout Margin="30,100" Spacing="20" BindableLayout.ItemsSource="{Binding MenuList}">
+                <StackLayout Margin="20,80" Spacing="20" BindableLayout.ItemsSource="{Binding Menu}">
                     <BindableLayout.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout Orientation="Horizontal" Spacing="20">
+                            <StackLayout Orientation="Horizontal" Spacing="20" >
                                 <Grid Grid.Row="2" HorizontalOptions="Start" VerticalOptions="Start"
                                           HeightRequest="46" WidthRequest="46">
                                     <Ellipse WidthRequest="46" HeightRequest="46" Fill="White" Opacity="0.5"/>
